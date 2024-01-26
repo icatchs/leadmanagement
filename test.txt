@@ -1,0 +1,10 @@
+$leadSource = LeadSource::find($leadSourceId);
+$leads = $leadSource->leads;
+
+// Get the lead source for a specific lead
+$lead = Lead::find($leadId);
+$leadSource = $lead->leadSource;
+
+// Get lead sources for a specific user
+$user = User::find($userId);
+$leadSources = $user->leadSources;
